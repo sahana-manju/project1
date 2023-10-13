@@ -16,7 +16,7 @@ st.markdown(f'<h1 style="color:#336BFF;font-size:34px;">{"BreezoScan"}</h1>', un
 st.markdown('Check the air quality around you to combat air pollutaion and lead healthier lives')
 st.divider()
 
-df_air=pd.read_csv('/Users/sahanamanjunath/Downloads/AQI and Lat Long of Countries.csv')
+df_air=pd.read_csv('AQI and Lat Long of Countries.csv')
 countries=list(df_air['Country'].unique())
 
 selection = st.sidebar.selectbox("Choose the operation", ["Check Global Statistics", "Check Air Quality for a region","Upload data","Predict Air Quality"])
