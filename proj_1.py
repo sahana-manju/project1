@@ -5,7 +5,6 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 import hiplot as hip
-from PIL import Image
 from streamlit import runtime
 runtime.exists()
 
