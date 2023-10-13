@@ -1,0 +1,7 @@
+seaborn
+matplotlib
+numpy
+pandas
+plotly
+hiplot
+PIL
