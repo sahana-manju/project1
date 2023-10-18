@@ -40,7 +40,7 @@ st.markdown('**Breathing Innovation: Empowering Lives with Precision Air Quality
 
 
 
-df_air=pd.read_csv('/Users/sahanamanjunath/Downloads/AQI and Lat Long of Countries.csv')
+df_air=pd.read_csv('AQI and Lat Long of Countries.csv')
 countries=list(df_air['Country'].unique())
 
 def redirect_to_streamline():
@@ -69,7 +69,7 @@ selection = st.sidebar.selectbox("Choose your operation", ["Check Global Statist
 if selection=='Learn about Air Quality Index(AQI)':
 #if st.sidebar.button("About",key="default_button_key"):
     st.markdown('**This page provides information to the user on Air Quality Index (AQI), a significant parameter in measuring the air quality**')
-    image = Image.open('/Users/sahanamanjunath/Downloads/girl-transformed.jpg')
+    image = Image.open('girl-transformed.jpg')
     st.image(image, caption='Breathing Innovation: Empowering Lives with Precision Air Quality Analysis.')
     st.markdown("The Air Quality Index (AQI) is a numerical scale used to communicate how polluted the air currently is or how polluted it is forecast to become. It quantifies the concentration of specific air pollutants into a single number, which can help people understand the potential health impacts of breathing the air in a particular area. The pollutants commonly measured to calculate the AQI include:")
     bullet_points = [
@@ -183,7 +183,7 @@ if selection=='Check Global Statistics':
 if selection=='Check Air Quality for desired region':
 #if st.sidebar.button("Check Air Quality for desired region"): 
     st.markdown("**This page allows the user to examine the quality of the air in a particular region by selecting the country and city of their choice. To view the safe Air Quality Index (AQI) index levels, please refer to the AQI table below.**")
-    image = Image.open('/Users/sahanamanjunath/Downloads/aqi_table2.jpg')
+    image = Image.open('aqi_table2.jpg')
     st.image(image, caption='Breathing Innovation: Empowering Lives with Precision Air Quality Analysis.')
     column1 = st.selectbox("Choose Country", countries)
     df_city=df_air[(df_air['Country']==column1)]
