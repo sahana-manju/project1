@@ -43,15 +43,8 @@ st.markdown('**Breathing Innovation: Empowering Lives with Precision Air Quality
 df_air=pd.read_csv('AQI and Lat Long of Countries.csv')
 countries=list(df_air['Country'].unique())
 
-def redirect_to_streamline():
-    # Run the other Streamlit script for the streamline page
-    import subprocess
-    subprocess.run(["streamlit", "run", "index.py"])
-
-
-if st.sidebar.button("Go back to Home page"):
-        # Redirect to the streamline page
-    redirect_to_streamline()
+if st.sidebar.markdown(f'<a href="https://aqiproject-dcbypjgtfn7bexqbfcnbin.streamlit.app"><button>Go back to Home Page</button> </a>', unsafe_allow_html=True):
+    pass
 
 
 
