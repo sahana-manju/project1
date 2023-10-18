@@ -7,7 +7,7 @@ import plotly.express as px
 import hiplot as hip
 from PIL import Image
 from streamlit import runtime
-from streamlit_option_menu import option_menu
+#from streamlit_option_menu import option_menu
 runtime.exists()
 
 
